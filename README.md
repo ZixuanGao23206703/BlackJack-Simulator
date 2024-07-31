@@ -26,7 +26,4 @@ Step 3: Compile and launch the app by running: `npm start`.
 Step 4: Open and run the app at http://localhost:3000  
 
 ### Contact  
-Developer: Eyad Alshafi  
-LinkedIn: https://www.linkedin.com/in/eyad-alshafi/  
-GitHub: https://github.com/Eyad-A/  
-Portfolio: https://eyad-a.github.io/portfolio/  
+
