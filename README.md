@@ -1,7 +1,6 @@
 # React Blackjack  
 
-![A screenshot of the React Blackjack game](https://i.imgur.com/AoMXL9E.jpg "React Blackjack")
-
+![](src/blackjack-screenshot.jpg)
 ### Overview  
 A Blackjack game written in React.js. The app uses Axios to generate a deck of card 
 from the [Deck of Cards API](https://deckofcardsapi.com/).  
@@ -10,10 +9,10 @@ from the [Deck of Cards API](https://deckofcardsapi.com/).
 ### Features  
 - An app that users can use to play hands of Blackjack  
 - Generate cards from an external API  
-- Uses functions to handle dealing cards, and player decisions like 'hit' and 'stay'  
+- Uses functions to handle dealing cards, and player decisions like 'hit' and 'stand'  
 - Uses logic to figure out which hand is higher without going over 21 to determine the winner  
 - Manipulates DOM to display cards, and the results for each hand  
-- Users can click the "Reset Game" button to start a new game  
+- Users can click the "New Game" button to start a new game  
 
 ### Tech used 
 JavaScript, React.js, Axios, Bootstrap, CSS, HTML. 
@@ -25,10 +24,10 @@ Step 3: Compile and launch the app by running: `npm start`.
 Step 4: Open and run the app at http://localhost:3000  
 
 ### Contact  
-Developer: 
-LinkedIn:
-GitHub: 
-Portfolio:  
-=======
+Developer: Zixuan Gao               
+LinkedIn: https://www.linkedin.com/in/zixuan-gia/   
+GitHub: https://github.com/ZixuanGao23206703
+
+
 
 

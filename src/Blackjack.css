@@ -1,20 +1,24 @@
-html {
+html, body {
   height: 100%;
 }
 
 .blackjack-page {
-  margin: 0;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
   width: 100%;
   font: 1.5rem;
   background-color: rgb(96, 1, 1);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   position: relative;
 }
 
 .top-section {
-  font-family: 'Ultra', serif;
-  font-weight: normal;
+  font-family: 'math', serif;
+  font-weight: bold;
   color: white;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
   margin: 0;
@@ -37,14 +41,16 @@ p {
 .game-area {
   display: flex;
   justify-content: space-evenly;
+  flex-grow: 1;
 }
 
 .game-status {
-  font-family: 'Ultra', serif;
+  font-family: 'math', serif;
+  font-weight: bold;
   color: white;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-  margin: 0.5rem;
-  font-size: 2rem;
+  margin: 1rem;
+  font-size: 2.5rem;
   line-height: 2rem;
 }
 
@@ -53,7 +59,7 @@ p {
   flex-direction: column;
   align-items: center;
   margin-left: 0.75rem;
-  padding-right: 0.6;
+  padding-right: 0.6rem;
 }
 
 .right {
@@ -61,7 +67,7 @@ p {
   flex-direction: column;
   align-items: center;
   margin-right: 0.75rem;
-  padding-left: 0.6;
+  padding-left: 0.6rem;
 }
 
 .hand-container {
@@ -78,12 +84,16 @@ p {
 }
 
 .hit, .stand {
-  font-family: 'Ultra', serif;
+  font-family: 'Roboto Slab', serif;
+  
+  font-style: italic;
+  align-self: center;
   color: rgba(0, 0, 0, 0.6);
   font-size: 1.6rem;
   width: 10rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  height: 3rem;
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
   margin-bottom: 1rem;
   border-radius: 7px;
   border: 3px solid rgba(0, 0, 0, 0.3);
@@ -98,12 +108,15 @@ p {
 }
 
 .split, .switchHand {
-  font-family: 'Ultra', serif;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-style: italic;
   color: rgba(0, 0, 0, 0.6);
   font-size: 0.8rem;  
   width: 5rem;  
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+  height: 2rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
   margin: 0 5px;  
   border-radius: 7px;
   border: 3px solid rgba(0, 0, 0, 0.3);
@@ -129,6 +142,8 @@ p {
 
 .player-total,
 .dealer-total {
+  font-family: 'math', serif;
+  font-weight: bold;
   font-size: 1.4rem;
   margin-top: 0;
 }
@@ -142,6 +157,7 @@ p {
 }
 
 .player-hand, .dealer-hand {
+  font-family: 'math', serif;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -158,17 +174,20 @@ p {
 
 .reset {
   align-self: center;
-  font-family: 'Ultra', serif;
+  font-family: 'Roboto Slab', serif;
+  font-style: italic;
   color: rgba(0, 0, 0, 0.6);
   font-size: 1.4rem;
   width: 15rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  height: 3rem;
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
   border-radius: 7px;
   border: 3px solid rgba(0, 0, 0, 0.3);
   background-color: white;
   margin-bottom: 1rem;
 }
+
 
 .reset:hover {
   color: #fff;
@@ -179,9 +198,10 @@ p {
 .new-game {
   margin-top: 1.5rem;
   display: flex;
-  justify-content: center;
+  align-self: center;
   background-color: rgb(96, 1, 1);
   background-size: cover;
+  background-attachment: fixed;
   position: relative;
 }
 
@@ -247,10 +267,12 @@ p {
 }
 
 .active-hand-title {
+  font-family: 'Roboto Slab', serif;
   font-size: 1.6rem;  
-  font-weight: 'Ultra', serif;
 }
 
 .inactive-hand-title {
+  font-family:'Roboto Slab', serif;
+  
   font-size: 1.2rem;  
 }

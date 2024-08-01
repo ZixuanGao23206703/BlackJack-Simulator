@@ -10,7 +10,7 @@ class Blackjack extends Component {
     super(props);
 
     this.state = {
-      gameStatus: 'Are you ready?',
+      gameStatus: 'ARE YOU READY?',
       deck_id: '',
       playerHand: [],
       dealerHand: [],
