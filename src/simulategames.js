@@ -186,4 +186,4 @@ const simulateGames = async (numGames) => {
 };
 
 
-simulateGames(1000);
+simulateGames(10);

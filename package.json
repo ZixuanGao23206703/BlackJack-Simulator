@@ -3,7 +3,7 @@
   "homepage": "https://eyad-a.github.io/react-blackjack",
   "version": "0.1.0",
   "private": false,
-    "dependencies": {
+  "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -26,8 +26,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "collect-data": "node src/simulateGames.js" 
-  },
+    "collect-data": "node src/simulateGames.js"
+},
   "eslintConfig": {
     "extends": [
       "react-app",
