@@ -290,8 +290,8 @@ class Blackjack extends Component {
           <button onClick={this._newGame} className="reset">
             New Game
           </button>
-        </div>
-      </div>
+          </div>
+          </div>
     );
   }
 }
