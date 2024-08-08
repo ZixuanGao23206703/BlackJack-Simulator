@@ -151,7 +151,7 @@ def simulate_games(num_games):
     return game_results
 
 if __name__ == '__main__':
-    num_games = 10
+    num_games = 15
     game_results = simulate_games(num_games)
 
     
