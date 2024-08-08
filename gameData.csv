@@ -1,0 +1,13 @@
+score,score_dealer,hard,score_if_hit,score_fin_dealer,hit,stand,hard_if_hit,result,game_id
+19,13,True,19,23,0,1,True,Player Wins!,1
+8,10,True,18,20,1,1,True,Dealer Wins!,2
+8,13,True,18,17,1,1,True,Player Wins!,3
+16,15,True,26,17,1,1,True,Player Busted!,4
+21,14,False,21,19,0,1,False,Player Wins!,5
+12,7,True,22,18,1,1,True,Player Busted!,6
+15,12,True,23,19,1,1,True,Player Busted!,7
+10,8,True,12,20,1,0,True,Dealer Wins!,8
+10,8,True,17,20,1,1,True,Dealer Wins!,8
+17,12,True,17,22,0,1,True,Player Wins!,9
+12,9,True,13,19,1,0,True,Dealer Wins!,10
+12,9,True,21,19,1,1,True,Player Wins!,10
