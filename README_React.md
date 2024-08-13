@@ -3,7 +3,7 @@
 ![](src/blackjack-screenshot.jpg)
 ### Overview  
 A Blackjack game written in React.js. The app uses Axios to generate a deck of card 
-from the [Deck of Cards API](https://deckofcardsapi.com/).  
+from the [Deck of Cards API](https://deckofcardsapi.com/).  Game can be found from [Blackjack Game](https://blackjack-simulator.onrender.com).
 
 
 ### Features  
