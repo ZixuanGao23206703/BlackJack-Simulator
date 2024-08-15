@@ -1,87 +1,117 @@
-# Optimal strategy of Blackjack with Monte Carlo method
 
-## Overview  
-A Blackjack game written in React.js which can be found from [Blackjack Game](https://blackjack-simulator.onrender.com). This project focuses on optimizing the strategy for playing Blackjack using Monte Carlo simulations. Blackjack is a popular card game where the goal is to get a hand value as close to 21 as possible without exceeding it. The project aims to develop and compare different strategies, including a basic strategy and an optimized strategy using Monte Carlo methods.
+<div align="center">
+  <img src="C:/BlackjackModify/logo.jpg" alt="Logo" width="90" height="100">
+</div>
 
-## Visualize the Game
-![](src/blackjack-screenshot.jpg)
+<center>   
 
-## Features
-- **Basic Strategy Implementation**: A straightforward strategy that mimics standard Blackjack playing techniques.
-- **Monte Carlo Simulation**: A method to optimize the Blackjack strategy by simulating thousands of games and adjusting the strategy based on observed outcomes.
-- **Win Rate and Expected Return Analysis**: Compare the effectiveness of the basic strategy and the Monte Carlo-optimized strategy by calculating the win rate and expected return.
+# Evaluating Blackjack Strategies Using Monte Carlo Simulation
+</center>
 
-## Directory Structure
-project/  
-│  
-├── basic_strategy.py # Implementation of the basic Blackjack strategy  
-├── montecarlo_strategy.py # Implementation of the Monte Carlo strategy and simulation  
-├── iterative_optimization.py # Code for iterative optimization of the strategy  
-├── README.md # Project documentation  
-├── requirements.txt # List of dependencies  
-└── data/ # Directory for storing any generated data or results
+![Python](https://img.shields.io/badge/python-v3.x-blue)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-3.4.3-yellow)
+![NumPy](https://img.shields.io/badge/NumPy-latest-green)
+![Plotly](https://img.shields.io/badge/Plotly-latest-orange)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-yellow?logo=javascript)
+![React.js](https://img.shields.io/badge/React.js-17.0.2-blue?logo=react)
+![Axios](https://img.shields.io/badge/Axios-0.21.1-blueviolet?logo=axios)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5.0.0-purple?logo=bootstrap)
+![CSS](https://img.shields.io/badge/CSS-3-blue?logo=css3)
+![HTML](https://img.shields.io/badge/HTML-5-orange?logo=html5)
+![License: MIT](https://img.shields.io/badge/License-MIT-blue)
+
+Game can be found from [Blackjack Game-Zixuan](https://blackjack-simulator.onrender.com).
+
+<div align="center">
+  <img src="C:/BlackjackModify/React-Blackjack-shortgif.gif" alt="Animation" width="500">
+</div>
+
+## :pushpin: Overview  
+This project implements a Monte Carlo simulation of Blackjack to test and compare different playing strategies.The simulator models the game mechanics of Blackjack, including deck management, hand evaluation, and various player actions such as hitting, standing, doubling down, and splitting.
+
+The goal is to evaluate the effectiveness of various strategies over many simulated games, providing insights into long-term performance and decision-making in specific scenarios. 
+
+## :pencil:  Monte Carlo Simulation
+
+The core of this project is the use of Monte Carlo simulation to evaluate Blackjack strategies. Monte Carlo methods rely on repeated random sampling to obtain numerical results. In the context:
+
+- We simulate thousands of Blackjack hands for each strategy.
+- Each hand is played out according to the strategy being tested.
+- The results (wins, losses, pushes) are recorded.
+- This process is repeated many times to build a statistical distribution of outcomes.
+
+This approach allows us to:
+1. Estimate the expected value of each strategy.
+2. Understand the variance and risk associated with different playing styles.
+3. Compare strategies based on long-term performance rather than short-term luck.
+
+## :dart: Features  
+- Monte Carlo simulation engine for robust strategy evaluation
+- Multiple deck support
+- Various Blackjack strategies implemented:
+    - simplest_strategy: Hits if hand value is below 17; otherwise stands.
+    - random_strategy: Randomly chooses to hit or stand.
+    - basic_strategy: Classic strategy based on Blackjack strategy tables, considering both the player's hand and the dealer's visible card.
+    - basic_strategy_no_split: A variation of the basic strategy that does not consider splitting pairs.
+    - basic_strategy_no_aces: A variation of the basic strategy that ignores the special value of Aces.
+    - basic_strategy_no_splits_or_aces: A variation of the basic strategy that ignores both splitting pairs and the special value of Aces.
+- Detailed logging of game actions and outcomes
+- Data visualization of simulation results using matplotlib and plotly
+- Test functions for individual hand scenarios
 
 
-### Getting started
-To run the project locally, you'll need to have Python installed. Follow these steps to set up the environment:
-
-1. **Clone the Repository**:
-    ```bash
-    git clone https://github.com/ZixuanGao23206703/BlackJack-Simulator.git
-    cd BlackJack-simulator
-    ```
-
-2. **Create a Virtual Environment** :
-    ```bash
-    python3 -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
-
-3. **Install Dependencies**:
-    ```bash
-    pip install -r requirements.txt
-    ```
-## Usage
-
-### Running the Basic Strategy
-
-To simulate games using the basic strategy, run:
-
+## :key: Getting Started & Usage
+Step 1: Clone or download the repo.  
 ```bash
-python basic_strategy.py
-```
-### Running the Monte Carlo Simulation
-To optimize and simulate the strategy using Monte Carlo methods, run:
+ git clone https://github.com/ACM40960/project-ZixuanGao23206703.git
+ ```
+Step 2: Install the necessary Python packages with: 
 ```bash
-python montecarlo_strategy.py
+pip install plotly
+pip install Matplotlib
 ```
-### Iterative Strategy Optimization
-For a deeper optimization that involves multiple iterations:
-
+Step 3: Run Simulations: Simulate Blackjack games and analyze strategy performance.
 ```bash
-python iterative_optimization.py
+python blackjack_simulate.py
 ```
-This script will run several iterations of the Monte Carlo simulation, further refining the strategy with each iteration.
+Step 4: Testing Individual Strategies: Test a specific strategy on a single hand with step-by-step output.
+```bash
+from blackjack_test import test_strategy, test_strategy_with_specific_cards
 
-## Results
-After running the simulations, you will find the optimized strategy printed in the console, showing which actions to take in different scenarios (e.g., when the player's sum is 16 and the hand is soft). Additionally, win rates and expected returns are displayed for both the basic and optimized strategies.
+# Test a general strategy
+test_strategy(basic_strategy)
 
-## Project Goals
-- **Understanding Basic and Optimized Strategies**: Learn the differences between a basic strategy and an optimized strategy in Blackjack.
-- **Strategy Improvement**: Demonstrate how Monte Carlo simulations can be used to improve decision-making in uncertain environments like card games.
-- **Practical Application**: Provide a framework that can be adapted to other decision-making problems or games.
+# Test a strategy with specific cards
+test_strategy_with_specific_cards(basic_strategy, ('Ace', 'Hearts'), ('Eight', 'Spades'), ('King', 'Diamonds'))
+```
 
-## Future Work
-- **Reinforcement Learning Integration**: Explore the possibility of using reinforcement learning to further optimize the strategy.
-- **Extend to Multi-Deck Games**: Modify the simulation to handle more complex variations of Blackjack with multiple decks.
-- **UI Development&**: Develop a simple GUI to make the simulation accessible to non-programmers.
 
-## License
+## :eyes: Results
+The simulation provides:
+
+- Detailed logs of each hand played
+- Mean profit and stake for each strategy
+- Interactive histograms showing the distribution of profits
+- HTML files of the plots saved in the "result_histogram" directory
+    - simplest_strategy: [View Interactive Plot for Simplest Strategy](./result_histogram/simplest_strategy_plot.html) 
+    - random_strategy: [View Interactive Plot for Random Strategy](./result_histogram/random_strategy_plot.html)
+    - basic_strategy: [View Interactive Plot for Basic Strategy](./result_histogram/basic_strategy_plot.html)
+    - basic strategy (No Split): [View Interactive Plot for Basic Strategy (No Split)](./result_histogram/basic_strategy_no_split_plot.html)
+    - basic strategy (No Aces): [View Interactive Plot for Basic Strategy (No Aces)](./result_histogram/basic_strategy_no_aces_plot.html)
+    - basic Strategy (No Splits or Aces): [View Interactive Plot for Basic Strategy (No Splits or Aces)](./result_histogram/basic_strategy_no_splits_or_aces_plot.html)
+
+## :stars: Future Work
+- Implementing additional strategies: Explore and compare more advanced strategies, including card counting methods.
+- Simulating more complex scenarios: Incorporate additional game rules, such as different deck counts, surrender options, and varying dealer rules.
+- Optimizing performance: Improve the efficiency of the simulation to handle even larger datasets and more complex strategy evaluations.
+- Visualization improvements: Develop more detailed visualizations to better analyze the strategies' performance over time.
+
+## :page_with_curl: License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 
-### Contact  
-Developer: Zixuan Gao               
+## :mailbox: Contact  
+Email: zixuan.gao1@ucdconnect.ie  
 LinkedIn: https://www.linkedin.com/in/zixuan-gia/   
 GitHub: https://github.com/ZixuanGao23206703
 
