@@ -1,6 +1,6 @@
 
 <div align="center">
-  <img src="C:/BlackjackModify/logo.jpg" alt="Logo" width="90" height="100">
+  <img src="https://raw.githubusercontent.com/ZixuanGao23206703/BlackJack-Simulator/master/logo.jpg" alt="Logo" width="90" height="100">
 </div>
 
 <center>   
@@ -23,7 +23,7 @@
 Game can be found from [Blackjack Game-Zixuan](https://blackjack-simulator.onrender.com).
 
 <div align="center">
-  <img src="C:/BlackjackModify/React-Blackjack-shortgif.gif" alt="Animation" width="500">
+  <img src="https://raw.githubusercontent.com/ZixuanGao23206703/BlackJack-Simulator/master/React-Blackjack-shortgif.gif" alt="Animation" width="500">
 </div>
 
 ## :pushpin: Overview  
