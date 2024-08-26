@@ -111,7 +111,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 
 ## :mailbox: Contact  
-Email: zixuan.gao1@ucdconnect.ie  
+Email: zixuan.gao123@gmail.com  
 LinkedIn: https://www.linkedin.com/in/zixuan-gia/   
 GitHub: https://github.com/ZixuanGao23206703
 
